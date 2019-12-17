@@ -1,0 +1,12 @@
+server:
+  port: 9999
+  
+# configure routes with zuul.routes
+zuul:
+  routes:
+  # logical name for a service
+    movies:
+      path: /movies
+    # if no discovery, we have to know where apps are running
+      service-id: movies # lines up with spring.apllication.name
+      strip-prefix: true

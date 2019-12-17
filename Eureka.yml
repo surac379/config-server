@@ -1,0 +1,9 @@
+# at least 2 eureka insances. by default Eureka tries to register with Eureka
+
+# netflix-eureka/application.yml
+eureka:
+  client:
+    register-with-eureka: false
+    
+server:
+  port: 8761
