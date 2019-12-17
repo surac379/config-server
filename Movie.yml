@@ -1,6 +1,6 @@
 spring:
   application:
-    name:  movie
+    name:  movies
 
 server:
   port: 9596
